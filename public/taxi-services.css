@@ -1,0 +1,351 @@
+@import url("/Css/footer.css?v=1.1");
+@import url("/Css/whatsapp.css?v=1.1");
+/* Navbar CSS */
+.nav-links a {
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to right, #fc0, #d4af37);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  flex-direction: row;
+  position: fixed;
+  /*       
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  background: linear-gradient(to right, #fc0, #d4af37);
+  width: 100%;
+  top: 0;
+  z-index: 1000; */
+}
+.logo img {
+  width: 140px;
+  max-width: 100%;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+.nav-links a:hover {
+  color: #2d2d2d;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+.menu-toggle {
+  font-size: 30px;
+  display: none;
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #d4af37;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 19px 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+/* Navbar Placeholder */
+/* Body Styling
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("/assets/pic_2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Navbar Placeholder *
+.navbar-placeholder {
+  height: 80px; 
+  background: transparent;
+}
+
+/* Services Container *
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 10px;
+  flex-wrap: nowrap; 
+  overflow-x: hidden;
+}
+
+/* Individual Service Cards *
+.service-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Hover Effect *
+.service-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Icons *
+.service-icon {
+  font-size: 40px;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+/* CTA Button *
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  box-shadow: 0px 0px 10px rgba(255, 87, 34, 0.8);
+} */
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("/assets/pic_2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Horizontal Scroll Remove */
+}
+
+/* Navbar Placeholder */
+/* .navbar-placeholder {
+  height: 80px; 
+  background: transparent;
+} */
+
+/* Services Container */
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Service Cards */
+.service-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Hover Effect - No Scroll Issue */
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Prevent Hover Effect from Causing Scrollbar */
+.services-container:hover {
+  overflow: hidden;
+}
+
+/* Icons */
+.service-icon {
+  font-size: 40px;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+/* CTA Button */
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  box-shadow: 0px 0px 10px rgba(255, 87, 34, 0.8);
+}
+
+/* 💻 Responsive Design */
+
+/* 1️⃣ Desktop - Ek Line me 5 Cards */
+@media screen and (min-width: 1024px) {
+  .services-container {
+    flex-wrap: nowrap;
+    margin-top: 130px;
+  }
+  .service-card {
+    width: 18%; /* 5 cards ek row me */
+  }
+}
+
+/* 2️⃣ Medium Screens - 3 Cards upar, 2 Cards neeche */
+@media screen and (max-width: 1024px) {
+  .services-container {
+    justify-content: center;
+    margin-top: 130px;
+  }
+  .service-card {
+    width: calc(33.33% - 20px); /* 3 cards ek row me */
+  }
+}
+
+/* 3️⃣ Tablet - 2 Cards upar, 2 Cards neeche, 1 Card akela */
+@media screen and (max-width: 768px) {
+  .service-card {
+    width: 68%;
+  }
+}
+
+/* 4️⃣ Mobile - Saare cards ek ek karke neeche aa jayenge */
+@media screen and (max-width: 500px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .service-card {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  /* ✅ Navbar & Header ke liye koi changes nahi kiye */
+
+  /* ✅ Services Container */
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    gap: 15px;
+  }
+
+  /* ✅ Individual Service Cards */
+  .service-card {
+    width: 90%;
+    /* max-width: 280px; */
+    padding: 15px;
+    height: auto;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .service-icon {
+    font-size: 35px;
+  }
+
+  /* ✅ CTA Button */
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 300px) {
+  /* ✅ Navbar & Header ke liye koi changes nahi kiye */
+
+  /* ✅ Services Container */
+  .services-container {
+    padding: 20px 5px;
+  }
+
+  /* ✅ Individual Service Cards */
+  .service-card {
+    width: 95%;
+    max-width: 250px;
+    padding: 12px;
+  }
+
+  .service-card h3 {
+    font-size: 14px;
+  }
+
+  .service-card p {
+    font-size: 12px;
+  }
+
+  .service-icon {
+    font-size: 30px;
+  }
+
+  /* ✅ CTA Button */
+  .cta-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,30 @@
+/* Full height maintain karna zaroori hai */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content area ko grow karne dena */
+main {
+  flex: 1; /* Ye content ko stretch karega taaki footer neeche rahe */
+}
+
+/* Footer styling */
+.footer-container {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-height: 800px) {
+  .footer-container {
+    position: relative; /* Ensure karega ki footer move ho but neeche rahe */
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+  default-src 'self' https://cdnjs.cloudflare.com https://your-vercel-project.vercel.app;
+  script-src 'self' https://cdnjs.cloudflare.com https://your-vercel-project.vercel.app;
+  style-src 'self' https://fonts.googleapis.com https://your-vercel-project.vercel.app;
+  font-src 'self' https://fonts.gstatic.com https://your-vercel-project.vercel.app;
+  connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://your-vercel-project.vercel.app;"
+    />
+
+    <title>Taxi Services</title>
+    <link rel="stylesheet" href="public/taxi-services.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- <header class="navbar-placeholder"> -->
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="/assets/logo_without_bg.png" alt="Brand Logo"
+            /></a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="taxi-services.html">Taxi Service</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Pic Gallery</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+          <div class="menu-toggle">&#9776;</div>
+        </nav>
+      </header>
+
+      <!-- Services Section -->
+      <section class="services-container">
+        <div class="service-card">
+          <div class="service-icon">🚖</div>
+          <h3>Tour Packages</h3>
+          <p>Explore amazing destinations with our premium tour packages.</p>
+          <!-- <button class="cta-button">Book Now</button> -->
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚕</div>
+          <h3>One Way Cab</h3>
+          <p>Hassle-free one-way cab services at affordable rates.</p>
+          <!-- <button class="cta-button">Book Now</button> -->
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚘</div>
+          <h3>Up & Down Cab</h3>
+          <p>Book round trips easily with our up & down cab service.</p>
+          <!-- <button class="cta-button">Book Now</button> -->
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✈️</div>
+          <h3>Airport Pickup & Drop</h3>
+          <p>Reliable airport taxi service for seamless travel.</p>
+          <!-- <button class="cta-button">Book Now</button> -->
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚙</div>
+          <h3>Local Cab</h3>
+          <p>Hire cabs for local city rides at pocket-friendly rates.</p>
+        </div>
+      </section>
+      <a href="contact-us.html"><button class="cta-button">Book Now</button></a
+      ><br /><br /><br /><br />
+    </main>
+    <script src="/utils/footer.js?v=1.1"></script>
+    <script src="/utils/whatsapp-icon.js"></script>
+    <script src="index.js?v=1.2"></script>
+  </body>
+</html>
