@@ -49,6 +49,8 @@
   font-size: 30px;
   display: none;
   color: #fff;
+}
+.menu-toggle:hover {
   cursor: pointer;
 }
 @media (max-width: 900px) {
