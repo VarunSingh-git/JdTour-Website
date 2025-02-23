@@ -49,6 +49,7 @@
   font-size: 30px;
   display: none;
   color: #fff;
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   .nav-links {

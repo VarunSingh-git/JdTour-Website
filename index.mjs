@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".menu-toggle").addEventListener("click", toggleMenu);
 });
 
-document.querySelector(".menu-toggle").addEventListener("click", toggleMenu);
+// document.querySelector(".menu-toggle").addEventListener("click", toggleMenu);
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".email-btn").addEventListener("click", function(event) {
