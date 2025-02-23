@@ -1,11 +1,4 @@
 {
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
-
   "headers": [
     {
       "source": "/(.*)",
@@ -23,6 +16,16 @@
           "value": "X-Requested-With, Content-Type, Accept"
         }
       ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
