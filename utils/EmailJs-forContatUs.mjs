@@ -99,4 +99,3 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 });
-console.log(add());

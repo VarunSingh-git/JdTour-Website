@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".email-btn").addEventListener("click", function(event) {
-      event.preventDefault(); // Default action ko rokne ke liye
+      event.preventDefault();
       sendEmail();
   });
 });
