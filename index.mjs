@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.querySelector(".menu-toggle").addEventListener("click", toggleMenu);
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".email-btn").addEventListener("click", function(event) {
+      event.preventDefault(); // Default action ko rokne ke liye
+      sendEmail();
+  });
+});
+
 function sendEmail() {
   let email = "jdtravel07@gmail.com";
   let subject =
