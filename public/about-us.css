@@ -100,7 +100,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 300px 20px;
-  background-image: url("/assets/Background_img_2.jpg");
+  background-image: url("https://thisisphotostore.vercel.app/Background_img_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -23,15 +23,6 @@
   z-index: 1000;
   flex-direction: row;
   position: fixed;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #fc0, #d4af37);
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000; */
 }
 .logo img {
   width: 140px;

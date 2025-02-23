@@ -16,15 +16,6 @@
   z-index: 1000;
   flex-direction: row;
   position: fixed;
-  /*       
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  justify-content: space-between;
-  background: linear-gradient(to right, #fc0, #d4af37);
-  width: 100%;
-  top: 0;
-  z-index: 1000; */
 }
 .logo img {
   width: 140px;
@@ -74,85 +65,10 @@
     display: block;
   }
 }
-/* Navbar Placeholder */
-/* Body Styling
-body {
-  font-family: Arial, sans-serif;
-  background-image: url("/assets/pic_2.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-/* Navbar Placeholder *
-.navbar-placeholder {
-  height: 80px; 
-  background: transparent;
-}
-
-/* Services Container *
-.services-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 50px 10px;
-  flex-wrap: nowrap; 
-  overflow-x: hidden;
-}
-
-/* Individual Service Cards *
-.service-card {
-  position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 20px;
-  width: 250px;
-  height: 200px;
-  text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-/* Hover Effect *
-.service-card:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Icons *
-.service-icon {
-  font-size: 40px;
-  color: #ff9800;
-  margin-bottom: 10px;
-}
-
-/* CTA Button *
-.cta-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: linear-gradient(45deg, #ff9800, #ff5722);
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.cta-button:hover {
-  box-shadow: 0px 0px 10px rgba(255, 87, 34, 0.8);
-} */
-
 /* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  background-image: url("/assets/pic_2.jpeg");
+  background-image: url("https://thisisphotostore.vercel.app/pic_2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -164,11 +80,6 @@ body {
   overflow-x: hidden; /* Horizontal Scroll Remove */
 }
 
-/* Navbar Placeholder */
-/* .navbar-placeholder {
-  height: 80px; 
-  background: transparent;
-} */
 
 /* Services Container */
 .services-container {

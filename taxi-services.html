@@ -6,15 +6,34 @@
     <meta
       http-equiv="Content-Security-Policy"
       content="
-  default-src 'self' https://cdnjs.cloudflare.com https://your-vercel-project.vercel.app;
-  script-src 'self' https://cdnjs.cloudflare.com https://your-vercel-project.vercel.app;
-  style-src 'self' https://fonts.googleapis.com https://your-vercel-project.vercel.app;
-  font-src 'self' https://fonts.gstatic.com https://your-vercel-project.vercel.app;
-  connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://your-vercel-project.vercel.app;"
+    default-src 'self';
+    script-src 'self' https://cdnjs.cloudflare.com https://thisisphotostore.vercel.app;
+    style-src 'self' https://fonts.googleapis.com https://thisismywebsite-azure.vercel.app https://thisisphotostore.vercel.app; 
+    font-src 'self' https://fonts.gstatic.com https://thisisphotostore.vercel.app;
+    img-src 'self' data: https://thisismywebsite-azure.vercel.app https://thisisphotostore.vercel.app;
+    connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://thisismywebsite-azure.vercel.app https://thisisphotostore.vercel.app;
+    frame-src 'none';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    upgrade-insecure-requests;
+    block-all-mixed-content;
+    require-trusted-types-for 'script';
+  "
+    />
+    <link
+      rel="stylesheet"
+      href="https://thisismywebsite-azure.vercel.app/taxi-services.css?v=1.1"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://thisisphotostore.vercel.app/logo.png"
     />
 
     <title>Taxi Services</title>
-    <link rel="stylesheet" href="public/taxi-services.css" />
+  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -27,7 +46,9 @@
         <nav class="navbar">
           <div class="logo">
             <a href="index.html"
-              ><img src="/assets/logo_without_bg.png" alt="Brand Logo"
+              ><img
+                src="https://thisisphotostore.vercel.app/logo_without_bg.png"
+                alt="Brand Logo"
             /></a>
           </div>
           <ul class="nav-links">
