@@ -2,7 +2,7 @@ const policy = window.trustedTypes?.createPolicy("default", {
   createHTML: (string) => string,
 });
 
-fetch("https://thisismywebsite-azure.vercel.app/whatsapp-icon.html")
+fetch("https://thisismywebsite-azure.vercel.app/whatsapp.html")
   .then((response) => response.text())
   .then((data) => {
     document.body.insertAdjacentHTML(
