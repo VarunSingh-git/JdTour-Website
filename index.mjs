@@ -1,6 +1,5 @@
 function toggleMenu() {
   console.log("toggleMenu");
-  document.querySelector(".landing").innerHTML="Hello World";
   document.querySelector(".nav-links").classList.toggle("active");
 }
 document.addEventListener("DOMContentLoaded", function () {
