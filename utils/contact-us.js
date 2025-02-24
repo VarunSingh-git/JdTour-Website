@@ -4,3 +4,4 @@ function toggleMenu() {
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".menu-toggle").addEventListener("click", toggleMenu);
 });
+
