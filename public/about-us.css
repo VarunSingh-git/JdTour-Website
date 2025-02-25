@@ -61,7 +61,7 @@ body {
   color: #2d2d2d;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
-.menu-toggle {
+#menu-toggle {
   font-size: 30px;
   cursor: pointer;
   display: none;
@@ -85,7 +85,7 @@ body {
   .nav-links li {
     margin: 10px 0;
   }
-  .menu-toggle {
+  #menu-toggle {
     display: block;
   }
 }

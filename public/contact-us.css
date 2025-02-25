@@ -45,12 +45,12 @@
   color: #2d2d2d;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
-.menu-toggle {
+#menu-toggle {
   font-size: 30px;
   display: none;
   color: #fff;
 }
-.menu-toggle:hover {
+#menu-toggle:hover {
   cursor: pointer;
 }
 @media (max-width: 900px) {
@@ -71,7 +71,7 @@
   .nav-links li {
     margin: 10px 0;
   }
-  .menu-toggle {
+  #menu-toggle {
     display: block;
   }
 }

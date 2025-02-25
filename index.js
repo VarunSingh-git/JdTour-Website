@@ -1,13 +1,13 @@
-  // document
-  //   .getElementById("menu-toggle")
-  //   .addEventListener("click", function (event) {
-  //     event.preventDefault();
-  //     toggleMenu();
-  //   });
-
-  document.getElementById("menu-toggle").addEventListener("click", function () {
-    document.getElementById("nav-links").classList.toggle("show");
+document
+  .querySelector(".menu-toggle")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    toggleMenu();
   });
+
+// document.getElementById("menu-toggle").addEventListener("click", function () {
+//   document.getElementById("nav-links").classList.toggle("show");
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   document
@@ -37,8 +37,3 @@ function sendEmail() {
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
-
-function sanitizeInput(str) {
-  return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-module.exports = sanitizeInput;

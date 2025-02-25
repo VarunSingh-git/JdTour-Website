@@ -1,6 +1,8 @@
 // import { sanitizeInput } from "../index.mjs";
 
-const { sanitizeInput } = require("/Codes/Projects/9. Jd_Tour_&_Travels/index.js");
+function sanitizeInput(str) {
+  return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   emailjs.init("U2CA7ZBm6rnrWxlcf"); // Replace with your Public Key
