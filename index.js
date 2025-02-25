@@ -1,5 +1,5 @@
 document
-  .querySelector(".menu-toggle")
+  .querySelector("#menu-toggle")
   .addEventListener("click", function (event) {
     event.preventDefault();
     toggleMenu();
