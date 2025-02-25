@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   document
-    .querySelector(".menu-toggle")
+    .getElementById("menu-toggle")
     .addEventListener("click", function (event) {
       event.preventDefault();
       toggleMenu();
