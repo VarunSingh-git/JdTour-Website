@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     emailjs
-      .send("dzfjuitdgxhmjukyjtfhcb", "template_k4z1hqs", params)
+      .send("service_29mwnzv", "template_k4z1hqs", params)
       .then(() => {
         alert("✅ Message Sent Successfully!");
         form.reset();
