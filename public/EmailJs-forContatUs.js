@@ -4,7 +4,7 @@ function sanitizeInput(str) {
   return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
   emailjs.init("U2CA7ZBm6rnrWxlcf"); // Replace with your Public Key
 
   const form = document.getElementById("contactForm");
@@ -102,4 +102,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     return true;
   }
-});
+// });
