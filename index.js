@@ -36,6 +36,7 @@ document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
 
-export function sanitizeInput(str) {
+function sanitizeInput(str) {
   return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
+module.exports = sanitizeInput;

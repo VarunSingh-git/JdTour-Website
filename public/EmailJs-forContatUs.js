@@ -1,4 +1,6 @@
-import { sanitizeInput } from "../index.mjs";
+// import { sanitizeInput } from "../index.mjs";
+
+const sanitizeInput  = require("index.js");
 
 document.addEventListener("DOMContentLoaded", () => {
   emailjs.init("U2CA7ZBm6rnrWxlcf"); // Replace with your Public Key
