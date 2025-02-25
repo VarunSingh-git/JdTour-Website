@@ -1,19 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .querySelector(".menu-toggle")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      toggleMenu();
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .querySelector(".email-btn")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      sendEmail();
+    });
+});
 function toggleMenu() {
   console.log("toggleMenu");
   document.querySelector(".nav-links").classList.toggle("active");
 }
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".menu-toggle").addEventListener("click", toggleMenu);
-});
-
-// document.querySelector(".menu-toggle").addEventListener("click", toggleMenu);
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".email-btn").addEventListener("click", function(event) {
-      event.preventDefault();
-      sendEmail();
-  });
-});
 
 function sendEmail() {
   let email = "jdtravel07@gmail.com";
