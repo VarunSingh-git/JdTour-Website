@@ -5,9 +5,6 @@ document
     toggleMenu();
   });
 
-// document.getElementById("menu-toggle").addEventListener("click", function () {
-//   document.getElementById("nav-links").classList.toggle("show");
-// });
 
 document.addEventListener("DOMContentLoaded", () => {
   document
