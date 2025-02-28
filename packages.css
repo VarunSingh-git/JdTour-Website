@@ -133,7 +133,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 100px 35px;
+  padding: 130px 35px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -142,24 +142,26 @@ body {
 }
 .package-card {
   background: rgba(255, 255, 255, 0.178);
-  padding: 15px;
+  padding:12px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 0px 20px #000;
 }
 .package-card:hover {
-  background: rgba(145, 145, 145, 0.178);
-  backdrop-filter: blur(5px);
-  transform: scale(1.05);
+  /* background: rgba(145, 145, 145, 0.178);
+  backdrop-filter: blur(5px); */
+  transform: scale(1.02);
 }
 .package-image {
   width: 100%;
   height: 200px;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 6px;
 }
+/* https://thisisphotostore.vercel.app */
 .package-title {
   font-family: "Poppins", sans-serif;
   font-size: 18px;

@@ -112,27 +112,28 @@
   background-color: #e64a19;
 }
 body {
-  width: auto;
-  height: auto;
-  background-color: #313131;
-  background-image: radial-gradient(
-    rgba(230, 212, 212, 0.171) 2px,
-    transparent 0
-  );
-  background-size: 30px 30px;
-  background-position: -5px -5px;
+  font-family: Arial, sans-serif;
+  background-image: url("https://thisisphotostore.vercel.app/package-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 .packages-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 100px 35px;
+  padding: 130px 35px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -140,37 +141,44 @@ body {
   margin: auto;
 }
 .package-card {
-  background: white;
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.178);
+  padding:12px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 0px 20px #000;
 }
 .package-card:hover {
-  transform: scale(1.05);
+  /* background: rgba(145, 145, 145, 0.178);
+  backdrop-filter: blur(5px); */
+  transform: scale(1.02);
 }
 .package-image {
   width: 100%;
   height: 200px;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 6px;
 }
+/* https://thisisphotostore.vercel.app */
 .package-title {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   margin: 10px 0;
 }
 .book-now {
-  background-color: #ff5722;
-  color: white;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff9800, #ff5722);
   border: none;
-  padding: 10px 15px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  border-radius: 5px;
+  transition: 0.3s ease;
 }
 .book-now:hover {
-  background-color: #e64a19;
+  box-shadow: 0px 0px 10px rgba(255, 87, 34, 0.8);
 }
 @media (max-width: 250px) {
   .packages-container {
