@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>Coming Soon</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 2rem;
-            color: #333;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #666;
-            margin-top: 10px;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🚀 Coming Soon</h1>
-        <p>We are working on something amazing! Stay tuned.</p>
-        <a href="index.html" class="btn">Go Back Home</a>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <title>Our Gallery</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://thisisphotostore.vercel.app/logo.png"
+    />
+    <link rel="stylesheet" href="pic-gallery.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="https://thisisphotostore.vercel.app/logo_without_bg.png"
+              alt="Brand Logo"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="taxi-services.html">Taxi Service</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="pic-gallery.html">Pic Gallery</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+        <div id="menu-toggle">&#9776;</div>
+      </nav>
+    </header>
+    <main>
+      <section class="gallery-container">
+        <div class="gallery-category">
+          <div
+            class="cover-photo"
+            onclick="toggleGallery('dehradun-local')"
+            style="background-image: url('/assets/Background_img_1.jpg')"
+          >
+            <h3>Dehradun Local</h3>
+          </div>
+          <div class="gallery" id="dehradun-local">
+            <img src="dehradun1.jpg" alt="Dehradun Image 1" />
+            <img src="dehradun2.jpg" alt="Dehradun Image 2" />
+            <img src="dehradun3.jpg" alt="Dehradun Image 3" />
+          </div>
+        </div>
+
+        <div class="gallery-category">
+          <div
+            class="cover-photo"
+            onclick="toggleGallery('dehradun-haridwar')"
+            style="background-image: url('dehradun-haridwar-cover.jpg')"
+          >
+            <h3>Dehradun to Haridwar</h3>
+          </div>
+          <div class="gallery" id="dehradun-haridwar">
+            <img src="haridwar1.jpg" alt="Haridwar Image 1" />
+            <img src="haridwar2.jpg" alt="Haridwar Image 2" />
+            <img src="haridwar3.jpg" alt="Haridwar Image 3" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://thisismywebsite-azure.vercel.app/index.js?v=1.6"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
