@@ -1,10 +1,9 @@
-/* Navbar CSS */
 .nav-links a {
   text-decoration: none;
 }
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: linear-gradient(to right, #fc0, #d4af37);
   padding: 10px 20px;
@@ -12,6 +11,8 @@
   width: 100%;
   top: 0;
   z-index: 1000;
+  flex-direction: row;
+  position: fixed;
 }
 .logo img {
   width: 140px;
@@ -34,10 +35,13 @@
   color: #2d2d2d;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
-.menu-toggle {
+#menu-toggle {
   font-size: 30px;
   display: none;
   color: #fff;
+}
+#menu-toggle:hover {
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   .nav-links {
@@ -52,12 +56,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
   .nav-links.active {
-    display: flex;
+    display: grid;
   }
   .nav-links li {
     margin: 10px 0;
   }
-  .menu-toggle {
+  #menu-toggle {
     display: block;
   }
 }

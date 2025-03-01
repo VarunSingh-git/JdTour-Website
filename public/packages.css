@@ -150,8 +150,6 @@ body {
   box-shadow: -10px 0px 20px #000;
 }
 .package-card:hover {
-  /* background: rgba(145, 145, 145, 0.178);
-  backdrop-filter: blur(5px); */
   transform: scale(1.02);
 }
 .package-image {

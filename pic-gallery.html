@@ -15,6 +15,7 @@
       href="https://thisisphotostore.vercel.app/logo.png"
     />
     <link rel="stylesheet" href="pic-gallery.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   </head>
   <body>
     <header>
@@ -37,37 +38,48 @@
         <div id="menu-toggle">&#9776;</div>
       </nav>
     </header>
-    <main>
-      <section class="gallery-container">
-        <div class="gallery-category">
-          <div
-            class="cover-photo"
-            onclick="toggleGallery('dehradun-local')"
-            style="background-image: url('/assets/Background_img_1.jpg')"
-          >
-            <h3>Dehradun Local</h3>
-          </div>
-          <div class="gallery" id="dehradun-local">
-            <img src="dehradun1.jpg" alt="Dehradun Image 1" />
-            <img src="dehradun2.jpg" alt="Dehradun Image 2" />
-            <img src="dehradun3.jpg" alt="Dehradun Image 3" />
-          </div>
-        </div>
 
-        <div class="gallery-category">
-          <div
-            class="cover-photo"
-            onclick="toggleGallery('dehradun-haridwar')"
-            style="background-image: url('dehradun-haridwar-cover.jpg')"
-          >
-            <h3>Dehradun to Haridwar</h3>
+    <main>
+      <section>
+        <div class="gallery">
+          <div class="card" onclick="showPhotos('dehradun')">
+            <img src="/assets/Background_img_1.jpg" alt="Dehradun" />
+            <p>Dehradun</p>
+            <button class="book-now">Book Now</button>
           </div>
-          <div class="gallery" id="dehradun-haridwar">
-            <img src="haridwar1.jpg" alt="Haridwar Image 1" />
-            <img src="haridwar2.jpg" alt="Haridwar Image 2" />
-            <img src="haridwar3.jpg" alt="Haridwar Image 3" />
+          <div class="card" onclick="showPhotos('mussoorie')">
+            <img src="/assets/Background_img_2.jpg" alt="Mussoorie" />
+            <p>Mussoorie</p>
+          </div>
+          <div class="card" onclick="showPhotos('haridwar')">
+            <img src="images/haridwar-cover.jpg" alt="Haridwar" />
+            <p>Haridwar</p>
+          </div>
+          <div class="card" onclick="showPhotos('haridwar')">
+            <img src="images/new-york-cover.jpg" alt="new-york" />
+            <p>Haridwar</p>
+          </div>
+          <div class="card" onclick="showPhotos('haridwar')">
+            <img src="images/america-cover.jpg" alt="america" />
+            <p>Haridwar</p>
+          </div>
+          <div class="card" onclick="showPhotos('haridwar')">
+            <img src="images/saharanpur-cover.jpg" alt="saharanpur" />
+            <p>Haridwar</p>
+          </div>
+          <div class="card" onclick="showPhotos('haridwar')">
+            <img src="images/goa-cover.jpg" alt="goa" />
+            <p>Haridwar</p>
+          </div>
+          <div class="card" onclick="showPhotos('haridwar')">
+            <img src="images/india-cover.jpg" alt="india" />
+            <p>Haridwar</p>
           </div>
         </div>
+        <div id="photo-container" style="display: none"></div>
+        <button id="back-btn" onclick="goBack()" style="display: none">
+          Back
+        </button>
       </section>
     </main>
 
