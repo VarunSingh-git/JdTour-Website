@@ -87,8 +87,6 @@ body {
 
 .card {
   width: 300px;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
   height: 320px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -138,16 +136,8 @@ body {
 }
 
 #back-btn {
-  background: #007bff;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-  /* margin-left: 354px; */
-  /* display: none;
+  margin-left: 354px;
+  display: none;
   background: #007bff;
   color: white;
   font-size: 16px;
@@ -156,7 +146,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background 0.3s; */
+  transition: background 0.3s;
 }
 
 #back-btn:hover {

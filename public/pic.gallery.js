@@ -1,11 +1,11 @@
 const locationPhotos = {
   dehradun: [
-    "images/dehradun1.jpg",
-    "images/dehradun2.jpg",
-    "images/dehradun3.jpg",
-    "images/dehradun4.jpg",
-    "images/dehradun5.jpg",
-    "images/dehradun6.jpg",
+    "https://thisisphotostore.vercel.app/Background_img_1.jpg",
+    "https://thisisphotostore.vercel.app/Background_img_2.jpg",
+    "https://thisisphotostore.vercel.app/Background_img_1.jpg",
+    "https://thisisphotostore.vercel.app/Background_img_2.jpg",
+    "https://thisisphotostore.vercel.app/Background_img_1.jpg",
+    "https://thisisphotostore.vercel.app/Background_img_2.jpg",
   ],
   mussoorie: [
     "images/mussoorie1.jpg",
@@ -24,8 +24,8 @@ const locationPhotos = {
     "images/haridwar6.jpg",
   ],
 };
-
 function showPhotos(location) {
+  console.log("hi");
   gsap.to(".card", {
     opacity: 0,
     scale: 0.8,
@@ -35,6 +35,8 @@ function showPhotos(location) {
 
       const photoContainer = document.getElementById("photo-container");
       photoContainer.innerHTML = "";
+      photoContainer.style.display = "flex"; // FIXED
+
       document.getElementById("back-btn").style.display = "block";
 
       if (locationPhotos[location]) {
@@ -42,13 +44,21 @@ function showPhotos(location) {
           let img = document.createElement("img");
           img.src = imgSrc;
           img.alt = `Photo of ${location}`;
+          console.log("hi");
           img.style.opacity = 0;
+          img.style.transform = "translateY(20px)";
+
           photoContainer.appendChild(img);
 
           gsap.to(img, { opacity: 1, y: 0, duration: 0.8, delay: index * 0.2 });
         });
       }
+
       gsap.to("#photo-container", { opacity: 1, scale: 1, duration: 0.5 });
+
+      setTimeout(() => {
+        document.querySelector(".gallery").style.display = "none";
+      }, 500);
     },
   });
 }
