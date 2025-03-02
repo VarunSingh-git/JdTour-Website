@@ -1,97 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <title>Our Gallery</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://thisisphotostore.vercel.app/logo.png"
-    />
-    <link rel="stylesheet" href="pic-gallery.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="index.html"
-            ><img
-              src="https://thisisphotostore.vercel.app/logo_without_bg.png"
-              alt="Brand Logo"
-          /></a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="taxi-services.html">Taxi Service</a></li>
-          <li><a href="packages.html">Packages</a></li>
-          <li><a href="pic-gallery.html">Pic Gallery</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-        <div id="menu-toggle">&#9776;</div>
-      </nav>
-    </header>
 
-    <main>
-      <section>
-        <div class="gallery">
-          <div class="card" onclick="showPhotos('dehradun')">
-            <img src="https://thisisphotostore.vercel.app/Background_img_1.jpg" alt="Dehradun" />
-            <p>Dehradun</p>
-            <button class="book-now">Explore More</button>
-          </div>
-          <div class="card" onclick="showPhotos('mussoorie')">
-            <img src="https://thisisphotostore.vercel.app/Background_img_2.jpg" alt="Mussoorie" />
-            <p>Mussoorie</p>
-            <button class="book-now">Explore More</button>
-          </div>
-          <div class="card" onclick="showPhotos('haridwar')">
-            <img src="https://thisisphotostore.vercel.app/Dehradun-to-musoorie.jpg" alt="Haridwar" />
-            <p>Haridwar</p>
-            <button class="book-now">Explore More</button>
-          </div>
-          <div class="card" onclick="showPhotos('haridwar')">
-            <img src="https://thisisphotostore.vercel.app/Dehradun-to-dhanoulti.jpg" alt="new-york" />
-            <p>Haridwar</p>
-            <button class="book-now">Explore More</button>
-          </div>
-          <div class="card" onclick="showPhotos('haridwar')">
-            <img src="https://thisisphotostore.vercel.app/Dehradun-LT.jpg" alt="america" />
-            <p>Haridwar</p>
-            <button class="book-now">Explore More</button>
-          </div>
-          <div class="card" onclick="showPhotos('haridwar')">
-            <img src="https://thisisphotostore.vercel.app/1.jpg" alt="saharanpur" />
-            <p>Haridwar</p>
-            <button class="book-now">Explore More</button>
-          </div>
-          <div class="card" onclick="showPhotos('haridwar')">
-            <img src="https://thisisphotostore.vercel.app/Background_img_2.jpg" alt="goa" />
-            <p>Haridwar</p>
-            <button class="book-now">Explore More</button>
-          </div>
-          <div class="card" onclick="showPhotos('haridwar')">
-            <img src="https://thisisphotostore.vercel.app/Background_img_1.jpg" alt="india" />
-            <p>Haridwar</p>
-            <button class="book-now">Explore More</button>
-          </div>
-        </div>
-        <div id="photo-container" style="display: none"></div>
-        <button id="back-btn" onclick="goBack()" style="display: none">
-          Back
-        </button>
-      </section>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>Our Gallery</title>
+  <link rel="icon" type="image/png" href="https://thisisphotostore.vercel.app/logo.png" />
+  <link rel="stylesheet" href="https://thisismywebsite-azure.vercel.app/pic-gallery.css?v=1.3" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
 
-    <script src="https://thisismywebsite-azure.vercel.app/index.js?v=1.6"></script>
-    <script src="https://thisismywebsite-azure.vercel.app/pic.gallery.js?v=1.1"></script>
-    <!-- <script src="/pic.gallery.js"></script> -->
-  </body>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="https://thisisphotostore.vercel.app/logo_without_bg.png" alt="Brand Logo" /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="taxi-services.html">Taxi Service</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="pic-gallery.html">Pic Gallery</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <div id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="gallery">
+        <div class="card" onclick="showPhotos('dehradun')">
+          <img src="https://thisisphotostore.vercel.app/Background_img_1.jpg" alt="Dehradun" />
+          <p>Dehradun</p>
+          <button class="book-now">Explore More</button>
+        </div>
+        <div class="card" onclick="showPhotos('mussoorie')">
+          <img src="https://thisisphotostore.vercel.app/Background_img_2.jpg" alt="Mussoorie" />
+          <p>Mussoorie</p>
+          <button class="book-now">Explore More</button>
+        </div>
+        <div class="card" onclick="showPhotos('haridwar')">
+          <img src="https://thisisphotostore.vercel.app/Dehradun-to-musoorie.jpg" alt="Haridwar" />
+          <p>Haridwar</p>
+          <button class="book-now">Explore More</button>
+        </div>
+        <div class="card" onclick="showPhotos('haridwar')">
+          <img src="https://thisisphotostore.vercel.app/Dehradun-to-dhanoulti.jpg" alt="new-york" />
+          <p>Haridwar</p>
+          <button class="book-now">Explore More</button>
+        </div>
+        <div class="card" onclick="showPhotos('haridwar')">
+          <img src="https://thisisphotostore.vercel.app/Dehradun-LT.jpg" alt="america" />
+          <p>Haridwar</p>
+          <button class="book-now">Explore More</button>
+        </div>
+        <div class="card" onclick="showPhotos('haridwar')">
+          <img src="https://thisisphotostore.vercel.app/1.jpg" alt="saharanpur" />
+          <p>Haridwar</p>
+          <button class="book-now">Explore More</button>
+        </div>
+        <div class="card" onclick="showPhotos('haridwar')">
+          <img src="https://thisisphotostore.vercel.app/Background_img_2.jpg" alt="goa" />
+          <p>Haridwar</p>
+          <button class="book-now">Explore More</button>
+        </div>
+        <div class="card" onclick="showPhotos('haridwar')">
+          <img src="https://thisisphotostore.vercel.app/Background_img_1.jpg" alt="india" />
+          <p>Haridwar</p>
+          <button class="book-now">Explore More</button>
+        </div>
+      </div>
+      <div id="photo-container" style="display: none"></div>
+      <button id="back-btn" onclick="goBack()" style="display: none">
+        Back
+      </button>
+    </section>
+  </main>
+  <hr />
+  <div class="footer-container">
+    <footer class="footer">
+      © 2010 JD Tour & Travels Pvt. Ltd. | All Rights Reserved
+    </footer>
+  </div>
+  <script src="https://thisismywebsite-azure.vercel.app/index.js?v=1.6"></script>
+  <script src="https://thisismywebsite-azure.vercel.app/pic-gallery.js?v=1.1"></script>
+  <script src="https://thisismywebsite-azure.vercel.app/whatsapp-icon.js?v=1.2"></script>
+  <!-- <script src="pic-gallery.js"></script> -->
+</body>
+
 </html>

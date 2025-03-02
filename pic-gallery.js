@@ -35,7 +35,7 @@ function showPhotos(location) {
 
       const photoContainer = document.getElementById("photo-container");
       photoContainer.innerHTML = "";
-      photoContainer.style.display = "flex"; // FIXED
+      photoContainer.style.display = "flex";
 
       document.getElementById("back-btn").style.display = "block";
 
@@ -62,18 +62,33 @@ function showPhotos(location) {
     },
   });
 }
-
 function goBack() {
   gsap.to("#photo-container img", {
     opacity: 0,
     y: -20,
     duration: 0.5,
     onComplete: () => {
-      document.getElementById("photo-container").innerHTML = "";
-      document.querySelector(".gallery").classList.remove("hidden");
-      document.getElementById("back-btn").style.display = "none";
+
+      const photoContainer = document.getElementById("photo-container");
+      photoContainer.innerHTML = ""; // Saari photos hatao
+      photoContainer.style.display = "none"; // Hide kar do
+
+      const gallery = document.querySelector(".gallery");
+      gallery.style.display = "flex"; // Ensure it's visible
+      document.querySelectorAll(".card").forEach((card) => {
+        card.style.display = "block"; // Sare cards wapas show honge
+        card.style.opacity = "0"; // Pehle invisible rakho
+      });
+
+      document.querySelectorAll(".card img").forEach((img) => {
+        img.style.display = "block"; // Ensure images are visible
+        img.style.opacity = "0"; // Pehle fade-in ke liye invisible rakho
+      });
 
       gsap.to(".card", { opacity: 1, scale: 1, duration: 0.5 });
+      gsap.to(".card img", { opacity: 1, duration: 0.5 });
+
+      document.getElementById("back-btn").style.display = "none";
     },
   });
 }

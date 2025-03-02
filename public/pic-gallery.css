@@ -1,3 +1,5 @@
+@import url("https://thisismywebsite-azure.vercel.app/whatsapp.css?v=1.2");
+@import url("https://thisismywebsite-azure.vercel.app/footer.css?v=1.3");
 /* Navbar CSS */
 .nav-links a {
   text-decoration: none;
@@ -152,6 +154,20 @@ body {
 #back-btn:hover {
   background: #0056b3;
 }
+.book-now {
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 9px;
+  transition: 0.2s;
+}
+.book-now:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 402px) {
   .gallery {
@@ -161,7 +177,7 @@ body {
 
   .card {
     width: 90%;
-    height: auto;
+    /* height: auto; */
   }
 
   #photo-container img {
@@ -177,20 +193,6 @@ body {
 
   #photo-container img {
     width: 100%;
+    height: 90px;
   }
-}
-
-.book-now {
-  background: #007bff;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 9px;
-  transition: 0.2s;
-}
-.book-now:hover {
-  transform: scale(1.05);
 }

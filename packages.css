@@ -111,7 +111,8 @@
 .book-now:hover {
   background-color: #e64a19;
 }
-body {
+
+ body {
   font-family: Arial, sans-serif;
   background-image: url("https://thisisphotostore.vercel.app/package-bg.jpg");
   background-repeat: no-repeat;
@@ -123,7 +124,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
+} 
 * {
   margin: 0;
   padding: 0;
