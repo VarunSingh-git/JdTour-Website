@@ -79,7 +79,7 @@
 /* Form Styling */
 .contact-section {
   /* flex-direction: column; */
-  margin: 150px auto;
+  margin: 100px auto;
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
@@ -151,7 +151,7 @@ button:hover {
   .contact-section {
     flex-direction: column;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     margin: 23px;
     margin-top: 112px;
   }

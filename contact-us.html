@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://thisisphotostore.vercel.app https://thisismywebsite-azure.vercel.app https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js https://varunsingh-git.github.io;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://thisisphotostore.vercel.app https://thisismywebsite-azure.vercel.app https://varunsingh-git.github.io; 
@@ -25,101 +21,74 @@
     upgrade-insecure-requests;
     block-all-mixed-content;
     require-trusted-types-for 'script';
-  "
-    />
+  " />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://thisisphotostore.vercel.app/logo.png"
-    />
+  <link rel="icon" type="image/png" href="https://thisisphotostore.vercel.app/logo.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://thisismywebsite-azure.vercel.app/contact-us.css?v=1.2"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://thisismywebsite-azure.vercel.app/contact-us.css?v=1.2" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <title>Contact us</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="index.html"
-            ><img
-              src="https://thisisphotostore.vercel.app/logo_without_bg.png"
-              alt="Brand Logo"
-          /></a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="taxi-services.html">Taxi Service</a></li>
-          <li><a href="packages.html">Packages</a></li>
-          <li><a href="pic-gallery.html">Pic Gallery</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-        <div id="menu-toggle">&#9776;</div>
-      </nav>
-    </header>
-    <main>
-      <section class="contact-section">
-        <div class="contact-info">
-          <h2>Let's</h2>
-          <h1>Get in Touch</h1>
-          <p>
-            "Fill out the form to connect with our travel experts and explore
-            tailored solutions for your journey. Customize packages, book
-            premium travel services, and receive exclusive price quotes designed
-            to match your needs. Let us help you plan the perfect trip today!"
-          </p>
-        </div>
-        <div class="contact-form">
-          <form id="contactForm">
-            <div class="input-row">
-              <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                autocomplete="off"
-                required
-              />
-              <input
-                type="number"
-                id="ph"
-                placeholder="Your Phone"
-                autocomplete="off"
-                required
-              />
-            </div>
-            <input
-              type="email"
-              id="email"
-              placeholder="Your Email"
-              autocomplete="off"
-              required
-            />
-            <textarea
-              id="message"
-              placeholder="Your Message"
-              autocomplete="off"
-              required
-            ></textarea>
-            <button type="submit" id="submitBtn">Send Message</button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <hr />
-    <div class="footer-container">
-      <footer class="footer">
-        © 2010 JD Tour & Travels Pvt. Ltd. | All Rights Reserved
-      </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://thisismywebsite-azure.vercel.app/whatsapp-icon.js?v=1.2"></script>
-    <script src="https://thisismywebsite-azure.vercel.app/EmailJs-forContatUs.js?v=1.4"></script>
-    <script src="https://thisismywebsite-azure.vercel.app/index.js?v=1.7"></script>
-  </body>
+  <title>Contact us</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="https://thisisphotostore.vercel.app/logo_without_bg.png" alt="Brand Logo" /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="taxi-services.html">Taxi Service</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="pic-gallery.html">Pic Gallery</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <div id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+  <main>
+  <marquee behavior="scroll" direction="left"
+    style="color: #333; padding-top: 130px; font-size: 16px; font-weight: 600;">
+    💡 To ensure smooth communication, please provide an alternative Gmail ID in your message in case your primary
+    email encounters any issues. 🚀
+  </marquee>
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>Let's</h2>
+        <h1>Get in Touch</h1>
+        <p>
+          "Fill out the form to connect with our travel experts and explore
+          tailored solutions for your journey. Customize packages, book
+          premium travel services, and receive exclusive price quotes designed
+          to match your needs. Let us help you plan the perfect trip today!"
+        </p>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="input-row">
+            <input type="text" id="name" placeholder="Your Name" autocomplete="off" required />
+            <input type="number" id="ph" placeholder="Your Phone" autocomplete="off" required />
+          </div>
+          <input type="email" id="email" placeholder="Your Email" autocomplete="off" required />
+          <textarea id="message" placeholder="Your Message" autocomplete="off" required></textarea>
+          <button type="submit" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <hr />
+  <div class="footer-container">
+    <footer class="footer">
+      © 2010 JD Tour & Travels Pvt. Ltd. | All Rights Reserved
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://thisismywebsite-azure.vercel.app/whatsapp-icon.js?v=1.2"></script>
+  <script src="https://thisismywebsite-azure.vercel.app/EmailJs-forContatUs.js?v=1.4"></script>
+  <script src="https://thisismywebsite-azure.vercel.app/index.js?v=1.7"></script>
+</body>
+
 </html>
