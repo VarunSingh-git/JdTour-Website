@@ -5,7 +5,6 @@ document
     toggleMenu();
   });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   document
     .querySelector(".email-btn")
@@ -18,6 +17,15 @@ function toggleMenu() {
   console.log("toggleMenu");
   document.querySelector(".nav-links").classList.toggle("active");
 }
+document.addEventListener("click", function (event) {
+  const navbar = document.querySelector(".nav-links");
+  const menuToggle = document.getElementById("menu-toggle");
+
+  // **Agar user navbar ke bahar click kare aur wo open hai, toh close karo**
+  if (navbar.classList.contains("active") && event.target !== navbar && event.target !== menuToggle) {
+    navbar.classList.remove("active");
+  }
+});
 
 function sendEmail() {
   let email = "jdtravel07@gmail.com";
