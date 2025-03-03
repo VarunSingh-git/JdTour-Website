@@ -24,6 +24,7 @@ const locationPhotos = {
     "images/haridwar6.jpg",
   ],
 };
+
 function showPhotos(location) {
   console.log("hi");
   gsap.to(".card", {
@@ -46,6 +47,7 @@ function showPhotos(location) {
           img.alt = `Photo of ${location}`;
           console.log("hi");
           img.style.opacity = 0;
+          img.style.paddingBottom = "40px";
           img.style.transform = "translateY(20px)";
 
           photoContainer.appendChild(img);
@@ -68,7 +70,6 @@ function goBack() {
     y: -20,
     duration: 0.5,
     onComplete: () => {
-
       const photoContainer = document.getElementById("photo-container");
       photoContainer.innerHTML = ""; // Saari photos hatao
       photoContainer.style.display = "none"; // Hide kar do
@@ -92,4 +93,3 @@ function goBack() {
     },
   });
 }
-
