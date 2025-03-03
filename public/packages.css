@@ -111,6 +111,7 @@
 .book-now:hover {
   background-color: #e64a19;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-image: url("https://thisisphotostore.vercel.app/package-bg.jpg");
@@ -222,5 +223,42 @@ body {
   }
   .book-now {
     padding: 8px 12px;
+  }
+}
+
+.notice-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #01579b;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.notice-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.notice-heading {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.notice-text {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .notice-container {
+    font-size: 16px;
+    padding: 12px;
   }
 }
