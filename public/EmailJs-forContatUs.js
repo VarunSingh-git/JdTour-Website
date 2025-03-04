@@ -1,4 +1,16 @@
 // import { sanitizeInput } from "../index.mjs";
+function showNotification(message, type = "error") {
+  Swal.fire({
+      title: type === "error" ? "Error!" : "Success!",
+      text: message,
+      icon: type,
+      timer: 3000,
+      showConfirmButton: false,
+      toast: true,
+      position: "top-end",
+  });
+}
+
 
 function sanitizeInput(str) {
   return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -38,7 +50,7 @@ form.addEventListener("submit", (event) => {
   // Spam Protection (1 min cooldown)
   const currentTime = Date.now();
   if (currentTime - lastSentTime < 60000) {
-    alert("❌ Please wait before sending another message.");
+    showNotification("❌ Please wait before sending another message.");
     return;
   }
 
@@ -89,7 +101,7 @@ form.addEventListener("submit", (event) => {
 // Validation Functions
 function validateName(name) {
   if (!/^[A-Za-z\s]{3,}$/.test(name)) {
-    alert("Name must contain only letters (min 3 characters).");
+    showNotification("Name must contain only letters (min 3 characters).");
     return false;
   }
   return true;
@@ -97,7 +109,7 @@ function validateName(name) {
 
 function validateEmail(email) {
   if (!/^\S+@\S+\.\S+$/.test(email)) {
-    alert("Please enter a valid email address.");
+    showNotification("Please enter a valid email address.");
     return false;
   }
   return true;
@@ -105,7 +117,7 @@ function validateEmail(email) {
 
 function validatePhone(phone) {
   if (!/^\d{10}$/.test(phone)) {
-    alert("Phone number must be 10 digits.");
+    showNotification("Phone number must be 10 digits.");
     return false;
   }
   return true;
@@ -113,7 +125,7 @@ function validatePhone(phone) {
 
 function validateMessage(message) {
   if (message.length < 10) {
-    alert("Message must be at least 10 characters long.");
+    showNotification("Message must be at least 10 characters long.");
     return false;
   }
   return true;
