@@ -9,8 +9,8 @@
   <meta http-equiv="Expires" content="0" />
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://thisisphotostore.vercel.app https://thisismywebsite-azure.vercel.app https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js https://varunsingh-git.github.io;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://thisisphotostore.vercel.app https://thisismywebsite-azure.vercel.app https://varunsingh-git.github.io; 
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://thisisphotostore.vercel.app https://thisismywebsite-azure.vercel.app https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js https://varunsingh-git.github.io https://cdn.jsdelivr.net/npm/sweetalert2@11;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://thisisphotostore.vercel.app https://thisismywebsite-azure.vercel.app https://varunsingh-git.github.io https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css; 
     font-src 'self' https://fonts.gstatic.com https://thisisphotostore.vercel.app https://thisismywebsite-azure.vercel.app https://varunsingh-git.github.io;
     img-src 'self' data: https://thisismywebsite-azure.vercel.app https://thisisphotostore.vercel.app https://varunsingh-git.github.io;
     connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://thisismywebsite-azure.vercel.app https://thisisphotostore.vercel.app https://api.emailjs.com/api/v1.0/email/send https://varunsingh-git.github.io;
@@ -27,7 +27,7 @@
 
   <link rel="stylesheet" href="https://thisismywebsite-azure.vercel.app/contact-us.css?v=1.2" />
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
   <title>Contact us</title>
 </head>
 
@@ -49,11 +49,11 @@
     </nav>
   </header>
   <main>
-  <marquee behavior="scroll" direction="left"
-    style="color: #333; padding-top: 111px; font-size: 20px; font-weight: 500;">
-    💡 To ensure smooth communication, please provide an alternative Gmail ID in your message in case your primary
-    email encounters any issues. 🚀
-  </marquee>
+    <marquee behavior="scroll" direction="left"
+      style="color: #333; padding-top: 111px; font-size: 20px; font-weight: 500;">
+      💡 To ensure smooth communication, please provide an alternative Gmail ID in your message in case your primary
+      email encounters any issues. 🚀
+    </marquee>
 
     <section class="contact-section">
       <div class="contact-info">
@@ -85,11 +85,12 @@
       © 2010 JD Tour & Travels Pvt. Ltd. | All Rights Reserved
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://thisismywebsite-azure.vercel.app/whatsapp-icon.js?v=1.2"></script>
-  <script src="https://thisismywebsite-azure.vercel.app/EmailJs-forContatUs.js?v=1.4"></script>
   <script src="https://thisismywebsite-azure.vercel.app/index.js?v=1.7"></script>
   <script src="https://thisismywebsite-azure.vercel.app/internetCheack.js?v=1.1"></script>
+  <script src="https://thisismywebsite-azure.vercel.app/EmailJs-forContatUs.js?v=1.4"></script>
 </body>
 
 </html>

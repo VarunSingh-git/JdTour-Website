@@ -56,12 +56,28 @@ form.addEventListener("submit", (event) => {
   emailjs
     .send("service_29mwnzv", "template_k4z1hqs", params)
     .then(() => {
-      alert("✅ Message Sent Successfully!");
+      Swal.fire({
+        title: "Success!",
+        text: "✅ Message Sent Successfully!",
+        icon: "success",
+        timer: 3000,
+        showConfirmButton: false,
+        toast: true,
+        position: "top-end",
+      });
       form.reset();
       lastSentTime = Date.now(); // Update last sent time
     })
     .catch((error) => {
-      alert("Failed to Send Message!");
+      Swal.fire({
+        title: "Error!",
+        text: "❌ Failed to Send Message!",
+        icon: "error",
+        timer: 3000,
+        showConfirmButton: false,
+        toast: true,
+        position: "top-end",
+      });
       console.error("EmailJS Error:", error);
     })
     .finally(() => {
