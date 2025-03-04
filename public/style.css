@@ -689,3 +689,17 @@ body {
     transform: scale(1.04);
   }
 }
+
+#offline-message {
+  display: none; /* Default hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20%;
+}
