@@ -126,8 +126,8 @@ body {
 }
 
 #photo-container img {
-  width: 400px;
-  height: 300px;
+  width: 250px;
+  height: 280px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
