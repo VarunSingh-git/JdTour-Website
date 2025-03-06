@@ -47,7 +47,6 @@ function showPhotos(location) {
           img.alt = `Photo of ${location}`;
           console.log("hi");
           img.style.opacity = 0;
-          img.style.paddingBottom = "40px";
           img.style.transform = "translateY(20px)";
 
           photoContainer.appendChild(img);
