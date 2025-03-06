@@ -2,9 +2,9 @@ const locationPhotos = {
   dehradun: [
     "https://thisisphotostore.vercel.app/Dehradun-LT/1.jpg",
     "https://thisisphotostore.vercel.app/Dehradun-LT/2.webp",
-    "https://thisisphotostore.vercel.app/Dehradun-LT/3.webp",
+    "https://thisisphotostore.vercel.app/Dehradun-LT/3.jpg",
     "https://thisisphotostore.vercel.app/Dehradun-LT/4.jpg",
-    "https://thisisphotostore.vercel.app/Dehradun-LT/5.webp",
+    "https://thisisphotostore.vercel.app/Dehradun-LT/5.jpg",
     "https://thisisphotostore.vercel.app/Dehradun-LT/6.JPG",
     "https://thisisphotostore.vercel.app/Dehradun-LT/7.jpg",
     "https://thisisphotostore.vercel.app/Dehradun-LT/8.jpg",
