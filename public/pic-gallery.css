@@ -118,7 +118,7 @@ body {
 
 #photo-container {
   display: flex;
-  padding: 140px 70px;
+  padding: 140px 50px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
@@ -126,16 +126,11 @@ body {
 }
 
 #photo-container img {
-  width: calc(25% - 15px); /* 4 images ek row me */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-  /* width: 500px;
+  width: 400px;
   height: 300px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out; */
+  transition: transform 0.3s ease-in-out;
 }
 
 #photo-container img:hover {

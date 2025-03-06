@@ -8,6 +8,10 @@ const locationPhotos = {
     "https://thisisphotostore.vercel.app/Dehradun-LT",
     "https://thisisphotostore.vercel.app/Dehradun-LT",
     "https://thisisphotostore.vercel.app/Dehradun-LT",
+    "https://thisisphotostore.vercel.app/Dehradun-LT",
+    "https://thisisphotostore.vercel.app/Dehradun-LT",
+    "https://thisisphotostore.vercel.app/Dehradun-LT",
+    "https://thisisphotostore.vercel.app/Dehradun-LT",
     
   ],
   mussoorie: [
