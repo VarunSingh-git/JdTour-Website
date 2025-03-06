@@ -18,7 +18,7 @@
   position: fixed;
 }
 .logo img {
-  width: 160px;
+  width: 140px;
   max-width: 100%;
 }
 .nav-links {
@@ -115,10 +115,48 @@ body {
   font-weight: bold;
   margin-top: 10px;
 }
-
 #photo-container {
   display: flex;
-  padding: 140px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 140px 40px;
+  max-width: 1200px; /* Row ka max width set kar diya */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#photo-container img {
+  width: calc(25% - 20px); /* 4 images ek row me (25% width) */
+  height: auto;
+  min-width: 250px; /* Ensure ki small screens par bhi achha dikhe */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  #photo-container img {
+    width: calc(33.33% - 20px); /* Medium screens ke liye 3 images ek row me */
+  }
+}
+
+@media (max-width: 768px) {
+  #photo-container img {
+    width: calc(50% - 20px); /* Small screens ke liye 2 images ek row me */
+  }
+}
+
+@media (max-width: 480px) {
+  #photo-container img {
+    width: 100%; /* Mobile screens ke liye 1 image per row */
+  }
+}
+
+/* #photo-container {
+  display: flex;
+  padding: 140px 70px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
@@ -135,11 +173,12 @@ body {
 
 #photo-container img:hover {
   transform: scale(1.05);
-}
+} */
+
 #back-btn {
   position: absolute;
-  top: 110px; 
-  right: 20px; 
+  top: 110px; /* Navbar ke neeche space dene ke liye */
+  right: 20px; /* Right corner me chipkane ke liye */
   background: #007bff;
   color: white;
   font-size: 16px;
@@ -148,7 +187,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
-  z-index: 999;
+  z-index: 999; /* Ensure it stays above other elements */
 }
 
 #back-btn:hover {
@@ -181,11 +220,11 @@ body {
     width: 90%;
     /* height: auto; */
   }
-
+  /* 
   #photo-container img {
     width: 90%;
     max-width: 250px;
-  }
+  } */
 }
 
 @media (max-width: 320px) {
@@ -193,8 +232,8 @@ body {
     width: 100%;
   }
 
-  #photo-container img {
+  /* #photo-container img {
     width: 100%;
     height: 90px;
-  }
+  } */
 }
