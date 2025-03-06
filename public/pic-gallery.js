@@ -1,11 +1,14 @@
 const locationPhotos = {
   dehradun: [
-    "https://thisisphotostore.vercel.app/Background_img_1.jpg",
-    "https://thisisphotostore.vercel.app/Background_img_2.jpg",
-    "https://thisisphotostore.vercel.app/Background_img_1.jpg",
-    "https://thisisphotostore.vercel.app/Background_img_2.jpg",
-    "https://thisisphotostore.vercel.app/Background_img_1.jpg",
-    "https://thisisphotostore.vercel.app/Background_img_2.jpg",
+    "https://thisisphotostore.vercel.app/Dehradun-LT/1.jpg",
+    "https://thisisphotostore.vercel.app/Dehradun-LT/2.webp",
+    "https://thisisphotostore.vercel.app/Dehradun-LT/3.jpg",
+    "https://thisisphotostore.vercel.app/Dehradun-LT/4.jpg",
+    "https://thisisphotostore.vercel.app/Dehradun-LT/5.webp",
+    "https://thisisphotostore.vercel.app/Dehradun-LT",
+    "https://thisisphotostore.vercel.app/Dehradun-LT",
+    "https://thisisphotostore.vercel.app/Dehradun-LT",
+    
   ],
   mussoorie: [
     "images/mussoorie1.jpg",
