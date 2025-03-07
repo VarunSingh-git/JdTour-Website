@@ -13,7 +13,7 @@
 
 <body>
   <div class="whatsapp-float">
-    <a href="#" target="_blank" id="whatsapp-link" id="link">
+    <a href="#" target="_blank" id="whatsapp-link">
       <img src="https://thisisphotostore.vercel.app/whatsapp-icon-for-contact.png" alt="WhatsApp"
         class="whatsapp-icon" />
     </a>
@@ -23,7 +23,7 @@
       return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     }
 
-    document.getElementById("link").addEventListener("click", function (event) {
+    document.getElementById("whatsapp-link").addEventListener("click", function (event) {
       event.preventDefault();
       let whatsappNumber = "6398825250"; // Change this to your number
       let msg = "Hello, I want to Book my Cab!";

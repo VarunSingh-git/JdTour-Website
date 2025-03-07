@@ -6,7 +6,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+* {
+  font-family: Arial, sans-serif;
+}
 /* Content area ko grow karne dena */
 main {
   flex: 1; /* Ye content ko stretch karega taaki footer neeche rahe */
@@ -14,7 +16,6 @@ main {
 
 /* Footer styling */
 .footer-container {
-  font-family: 'Times New Roman', Times, serif;
   background: #222;
   color: white;
   text-align: center;
