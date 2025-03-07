@@ -5,14 +5,14 @@ document
     toggleMenu();
   });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   document
-//     .querySelector(".email-btn")
-//     .addEventListener("click", function (event) {
-//       event.preventDefault();
-//       sendEmail();
-//     });
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .querySelector(".email-btn")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      sendEmail();
+    });
+});
 function toggleMenu() {
   console.log("toggleMenu");
   document.querySelector(".nav-links").classList.toggle("active");
@@ -22,7 +22,11 @@ document.addEventListener("click", function (event) {
   const menuToggle = document.getElementById("menu-toggle");
 
   // **Agar user navbar ke bahar click kare aur wo open hai, toh close karo**
-  if (navbar.classList.contains("active") && event.target !== navbar && event.target !== menuToggle) {
+  if (
+    navbar.classList.contains("active") &&
+    event.target !== navbar &&
+    event.target !== menuToggle
+  ) {
     navbar.classList.remove("active");
   }
 });
@@ -36,6 +40,7 @@ function sendEmail() {
   let mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
     subject
   )}&body=${encodeURIComponent(body)}`;
+
   window.open(mailtoLink, "_blank");
 }
 
