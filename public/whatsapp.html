@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <link rel="stylesheet" href="https://thisismywebsite-azure.vercel.app/whatsapp.css">
   <title>Document</title>
 </head>
+
 <body>
   <div class="whatsapp-float">
-    <a href="https://web.whatsapp.com/send?phone=6398825250&text=Hello%2C%20I%20want%20to%20Book%20my%20Cab!" target="_blank">
-      <img
-        src="https://thisisphotostore.vercel.app/whatsapp-icon-for-contact.png"
-        alt="WhatsApp"
-        class="whatsapp-icon"
-      />
+    <a href="#" target="_blank" id="whatsapp-link">
+      <img src="https://thisisphotostore.vercel.app/whatsapp-icon-for-contact.png" alt="WhatsApp"
+        class="whatsapp-icon" />
     </a>
   </div>
+  <script>
+    let whatsappNumber = "6398825250"; // Change this to your number
+    let msg = "&text=Hello%2C%20I%20want%20to%20Book%20my%20Cab!"
+    let whatsappLink = isMobileDevice()
+      ? `whatsapp://send?phone=${whatsappNumber}${msg}` // Mobile me WhatsApp App open hoga
+      : `https://wa.me/${whatsappNumber}${msg}`; // PC me WhatsApp Web ya App
+
+    document.getElementById("whatsapp-link").setAttribute("href", whatsappLink);
+  </script>
 </body>
+
 </html>

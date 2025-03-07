@@ -14,6 +14,7 @@ main {
 
 /* Footer styling */
 .footer-container {
+  font-family: 'Times New Roman', Times, serif;
   background: #222;
   color: white;
   text-align: center;

@@ -5,14 +5,14 @@ document
     toggleMenu();
   });
 
-document.addEventListener("DOMContentLoaded", () => {
-  document
-    .querySelector(".email-btn")
-    .addEventListener("click", function (event) {
-      event.preventDefault();
-      sendEmail();
-    });
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   document
+//     .querySelector(".email-btn")
+//     .addEventListener("click", function (event) {
+//       event.preventDefault();
+//       sendEmail();
+//     });
+// });
 function toggleMenu() {
   console.log("toggleMenu");
   document.querySelector(".nav-links").classList.toggle("active");
