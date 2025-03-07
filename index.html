@@ -38,7 +38,7 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <a href="index.html"><img src="https://thisisphotostore.vercel.app/logo_without_bg.png" alt="Brand Logo" /></a>
+        <a href="index.html"><img src="https://thisisphotostore.vercel.app/navLogo.png" alt="Brand Logo" /></a>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -108,7 +108,7 @@
                 <hr class="custom-hr-for-about-us" />
 
                 <p class="text-ph">+91 63988 25250</p>
-                <a href="#" target="_blank" class="email-btn" id="whatsapp-link">Contact Us</a>
+                <a href="#" target="_blank" class="email-btn" id="whatsapp-link" id="link">Contact Us</a>
               </div>
             </div>
             <div class="card">
@@ -117,7 +117,7 @@
                 <hr class="custom-hr-for-about-us" />
 
                 <p class="text-ph">Dehradun, Uttarakhand - 248001</p>
-                <a href="#" target="_blank" class="email-btn" id="email-link">Email Us</a>
+                <a href="#" target="_blank" class="email-btn" id="email-link" id="link">Email Us</a>
               </div>
             </div>
             <div class="card">
@@ -131,7 +131,7 @@
                       <img src="https://thisisphotostore.vercel.app/instagram-icon.png" alt="Instagram" />
                     </a>
                     <!-- <a href="https://web.whatsapp.com/send?phone=6398825250&text=Hello%2C%20I%20want%20to%20Book%20my%20Cab!" -->
-                    <a href="#" target="_blank" class="icon" id="whatsapp-link">
+                    <a href="#" target="_blank" class="icon" id="whatsapp-link" id="link">
                       <img src="https://thisisphotostore.vercel.app/whatsapp-icon.png" alt="WhatsApp" />
                     </a>
                   </div>
@@ -154,25 +154,28 @@
       return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     }
 
-    // 📌 WhatsApp Link Logic
-    let whatsappNumber = "6398825250"; // Change this to your number
-    let msg = "&text=Hello%2C%20I%20want%20to%20Book%20my%20Cab!"
-    let whatsappLink = isMobileDevice()
-      ? `whatsapp://send?phone=${whatsappNumber}${msg}` // Mobile me WhatsApp App open hoga
-      : `https://wa.me/${whatsappNumber}${msg}`; // PC me WhatsApp Web ya App
+    document.getElementById("link").addEventListener("click", function (event) {
+      event.preventDefault();
+      let whatsappNumber = "6398825250"; // Change this to your number
+      let msg = "Hello, I want to Book my Cab!";
+      let encodedMsg = encodeURIComponent(msg);
+      let whatsappLink = isMobileDevice()
+        ? `whatsapp://send?phone=${whatsappNumber}&text=${encodedMsg}` // Mobile me WhatsApp App open hoga
+        : `https://wa.me/${whatsappNumber}&text=${encodedMsg}`; // PC me WhatsApp Web ya App
+      console.log(whatsappLink)
+      document.getElementById("whatsapp-link").setAttribute("href", whatsappLink);
 
-    document.getElementById("whatsapp-link").setAttribute("href", whatsappLink);
+      // 📌 Gmail Link Logic
+      let email = "jdtravel07@gmail.com";
+      let subject = "Namaste, Welcome to Jagdamba Tour and Travels, Ride Enjoy & Repeat ❤️";
+      let body = "We will soon answer your E-mail. \nWarm Regards, JD Tour & Travels..";
 
-    // 📌 Gmail Link Logic
-    let email = "jdtravel07@gmail.com";
-    let subject = "Namaste, Welcome to Jagdamba Tour and Travels, Ride Enjoy & Repeat ❤️";
-    let body = "We will soon answer your E-mail. \nWarm Regards, JD Tour & Travels..";
+      let emailLink = isMobileDevice()
+        ? `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}` // Mobile me Gmail App
+        : `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; // PC me Gmail Web
 
-    let emailLink = isMobileDevice()
-      ? `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}` // Mobile me Gmail App
-      : `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; // PC me Gmail Web
-
-    document.getElementById("email-link").setAttribute("href", emailLink);
+      document.getElementById("email-link").setAttribute("href", emailLink);
+    });
   </script>
 
   <script src="https://thisismywebsite-azure.vercel.app/whatsapp-icon.js?v=1.3"></script>
