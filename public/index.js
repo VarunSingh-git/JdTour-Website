@@ -7,7 +7,7 @@ document
 
 document.addEventListener("DOMContentLoaded", () => {
   document
-    .querySelector(".email-btn_1")
+    .getElementById("email-btn_1")
     .addEventListener("click", function (event) {
       event.preventDefault();
       sendEmail();
