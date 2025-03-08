@@ -36,7 +36,7 @@ function sendEmail() {
   let subject =
     "Namaste, Welcome to Jagdamba Tour and Travels, Ride Enjoy & Repeat ❤️";
   let body =
-    "We will soon answer your E-mail. \nWarm Regards, JD Tour & Travels..";
+    "We will soon answer your E-mail. \nWarm Regards, \n\nJD Tour & Travels..";
 
   let mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
     subject
