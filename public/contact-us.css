@@ -97,17 +97,20 @@
   padding-right: 30px;
 }
 .contact-info h2 {
+  font-family: 'Times New Roman', Times, serif;
   color: #555555;
   margin: 0;
   font-size: 22px;
 }
 .contact-info h1 {
+  font-family: 'Times New Roman', Times, serif;
   color: #007bff;
   margin: 10px 0;
   font-size: 36px;
   font-weight: 700;
 }
 .contact-info p {
+  font-family: 'Times New Roman', Times, serif;
   color: #555;
   font-size: 16px;
   line-height: 1.6;
