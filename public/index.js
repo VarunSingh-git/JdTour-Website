@@ -35,9 +35,7 @@ function sendEmail() {
   let email = "jdtravel07@gmail.com";
   let subject =
     "Namaste, Welcome to Jagdamba Tour and Travels, Ride Enjoy & Repeat ❤️";
-  let body =
-    "We will soon answer your E-mail. \nWarm Regards, \n\nJD Tour & Travels..";
-
+  let body = "I’m looking to book a cab. \nPlease share the necessary details.";
   let mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
     subject
   )}&body=${encodeURIComponent(body)}`;
