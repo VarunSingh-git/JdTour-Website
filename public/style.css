@@ -695,7 +695,7 @@ body {
   }
 }
 #JdDesign {
-   font-size: 50px;
+  /* font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
   background: linear-gradient(
@@ -708,8 +708,8 @@ body {
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 5s linear infinite; 
-/* 
+  animation: shine 5s linear infinite;  */
+
   font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
@@ -717,7 +717,7 @@ body {
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 3s linear infinite; */
+  animation: shine 3s linear infinite;
 }
 
 @keyframes shine {
