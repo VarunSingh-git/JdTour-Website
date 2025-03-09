@@ -696,21 +696,6 @@ body {
   }
 }
 #JdDesign {
-  /* font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: linear-gradient(
-    90deg,
-    rgb(255, 86, 86),
-    rgb(255, 86, 86),
-    rgb(199, 199, 199),
-    rgb(255, 86, 86)
-  );
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s linear infinite;  */
-
   font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
