@@ -140,9 +140,12 @@ body {
   text-align: justify;
   font-family: "Open Sans", sans-serif;
 }
-.contact-button,
 .discount-banner {
   background: #ffd146;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.contact-button {
   color: #000;
   transition: 0.3s ease-in-out;
 }
@@ -173,13 +176,10 @@ body {
   font-family: Merienda, serif;
 }
 .contact-button {
-  display: inline-block;
   padding: 12px 26px;
   font-size: 16px;
   font-weight: 700;
-  border-radius: 8px;
   text-decoration: none;
-  border: 2px solid #b8860b;
 }
 .discount-text {
   font-size: 20px;
@@ -190,9 +190,7 @@ body {
   line-height: 1.6;
 }
 .contact-button:hover {
-  background: #ffc107;
-  color: #636363;
-  border-color: #000;
+  opacity: 0.9;
   transform: translateY(-3px) scale(1.05);
 }
 .section-b {
@@ -306,8 +304,7 @@ body {
     font-size: 14px;
   }
   .contact-button {
-    font-size: 14px;
-    padding: 10px 22px;
+    opacity: 0.9;
   }
   .section-content {
     font-size: 1rem;
