@@ -109,6 +109,8 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   overflow: hidden;
+  text-shadow: 7px 6px 3px black;
+  color: white;
 }
 
 /* Hover Effect - No Scroll Issue */
@@ -215,6 +217,8 @@ body {
 
   .service-card p {
     font-size: 14px;
+    text-shadow: 7px 6px 3px black;
+    color: white;
   }
 
   .service-icon {
@@ -249,6 +253,8 @@ body {
 
   .service-card p {
     font-size: 12px;
+    text-shadow: 7px 6px 3px black;
+    color: white;
   }
 
   .service-icon {
