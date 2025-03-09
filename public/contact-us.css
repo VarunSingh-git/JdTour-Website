@@ -180,7 +180,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 .footer-logo {
@@ -203,25 +203,22 @@ button:hover {
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a i {
+  font-size: 16px;
+  color: yellow;
+  transition: 0.3s;
 }
 
 .footer-links a:hover {
   color: yellow;
 }
 
-.footer-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-icons a {
-  color: white;
-  font-size: 20px;
-  transition: 0.3s ease-in-out;
-}
-
-.footer-icons a:hover {
-  color: yellow;
+.footer-links a:hover i {
   transform: scale(1.2);
 }
 
@@ -242,9 +239,5 @@ button:hover {
     margin-top: 10px;
     flex-direction: column;
     gap: 10px;
-  }
-
-  .footer-icons {
-    margin-top: 10px;
   }
 }
