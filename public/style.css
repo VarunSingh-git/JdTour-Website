@@ -689,3 +689,23 @@ body {
     transform: scale(1.04);
   }
 }
+#JdDesign {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, yellow, rgb(255, 255, 255), yellow);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
