@@ -109,6 +109,15 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   overflow: hidden;
+}
+.service-card h3 {
+  font-size: 16px;
+  text-shadow: 7px 6px 3px black;
+  color: #fc0;
+}
+
+.service-card p {
+  font-size: 14px;
   text-shadow: 7px 6px 3px black;
   color: white;
 }
@@ -217,8 +226,6 @@ body {
 
   .service-card p {
     font-size: 14px;
-    text-shadow: 7px 6px 3px black;
-    color: white;
   }
 
   .service-icon {
@@ -253,8 +260,6 @@ body {
 
   .service-card p {
     font-size: 12px;
-    text-shadow: 7px 6px 3px black;
-    color: white;
   }
 
   .service-icon {
