@@ -693,11 +693,20 @@ body {
   font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
+  background: linear-gradient(90deg, red, rgb(199, 199, 199), red);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+/*   
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
   background: linear-gradient(45deg, yellow, rgb(255, 255, 255), yellow);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 3s linear infinite;
+  animation: shine 3s linear infinite; */
 }
 
 @keyframes shine {
