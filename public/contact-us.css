@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* Navbar CSS */ 
+/* Navbar CSS */
 .nav-links a {
   text-decoration: none;
 }
@@ -97,20 +97,20 @@
   padding-right: 30px;
 }
 .contact-info h2 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #555555;
   margin: 0;
   font-size: 22px;
 }
 .contact-info h1 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #007bff;
   margin: 10px 0;
   font-size: 36px;
   font-weight: 700;
 }
 .contact-info p {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #555;
   font-size: 16px;
   line-height: 1.6;
@@ -166,7 +166,6 @@ button:hover {
   }
 }
 
-
 .footer-container {
   background-color: #111;
   color: white;
@@ -192,7 +191,7 @@ button:hover {
 .footer-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .footer-links li {
@@ -203,7 +202,7 @@ button:hover {
   color: white;
   text-decoration: none;
   font-size: 14px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
@@ -217,8 +216,8 @@ button:hover {
 
 .footer-icons a {
   color: white;
-  font-size: 18px;
-  transition: 0.3s;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
 }
 
 .footer-icons a:hover {
@@ -235,17 +234,17 @@ button:hover {
 /* Responsive */
 @media (max-width: 768px) {
   .footer {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .footer-links {
-      margin-top: 10px;
-      flex-direction: column;
-      gap: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .footer-icons {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 }
