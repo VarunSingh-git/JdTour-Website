@@ -49,8 +49,8 @@ form.addEventListener("submit", (event) => {
 
   // Spam Protection (1 min cooldown)
   const currentTime = Date.now();
-  if (currentTime - lastSentTime < 60000) {
-    showNotification("❌ Please wait before sending another message.");
+  if (currentTime - lastSentTime < 120000) {
+    showNotification("Hold on! You just sent a message. Please wait a little before trying again.");
     return;
   }
 
